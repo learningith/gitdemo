@@ -1,0 +1,34 @@
+Java Program to capitalize each word in String
+public static void main(String[] args) {
+
+       String name = "everyone loves java in world";
+//        String str[] = name.split(" ");
+//        for (String str1 : str) {
+//            System.out.print(str1.substring(0, 1).toUpperCase() + str1.substring(1, str1.length()) +"   ");
+//        }
+---------------------------------------------------------------------------------------------
+This is for only single word
+
+        String  firstLetter = name.substring(0,1);
+        String remainingLetter= name.substring(1,name.length());
+        name = firstLetter.toUpperCase() + remainingLetter;
+        System.out.print(name);
+}
+}
+--------------------------------------------------------------------------------------------------
+public class LargestNumber {
+    public static void main(String[] args) {
+        String str="welCome to kolar";
+        String [] word=str.split(" ");
+       for (String w:word) {
+
+           String firstLetter=w.substring(0,1);
+           String remainingLetters=w.substring(1,w.length());
+           firstLetter=firstLetter.toUpperCase();
+           String name=firstLetter+remainingLetters+" ";
+           System.out.print(name);}
+    }
+
+}
+
+
